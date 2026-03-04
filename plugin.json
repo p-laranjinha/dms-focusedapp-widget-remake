@@ -1,0 +1,14 @@
+{
+  "id": "FocusedApp-remake",
+  "name": "Focused Window Remake",
+  "description": "Adds/changes some features to the default FocusedApp widget.",
+  "version": "1.0.0",
+  "author": "OrangePebble",
+  "icon": "window",
+  "type": "widget",
+  "component": "./widget.qml",
+  "permissions": [
+    "settings_read",
+    "settings_write"
+  ]
+}
