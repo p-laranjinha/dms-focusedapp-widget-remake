@@ -2,13 +2,14 @@
 
 A slightly modified version of the FocusedApp widget that comes with DMS.
 
-This version mixes some capabilities of the AppsDock in order to add an icon of the program and a
-right click popup with actions.
-
-I've also changed the space between the bar and the tooltip so it's the same as the popup.
+This version mixes some capabilities of the AppsDock widget in order to add the icon of the active
+program and a right-click popup with actions.
 
 Although it doesn't have all the features of both the FocusedApp nor the AppsDock because I just
 picked what I wanted from both.
+
+I've also changed the space between the bar and the tooltip so it's the same as the popup, and made
+it so middle-clicking closes the window.
 
 [DMS plugin development quick start.](https://danklinux.com/docs/dankmaterialshell/plugin-development#quick-start)
 
