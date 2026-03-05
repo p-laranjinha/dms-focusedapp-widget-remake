@@ -8,8 +8,8 @@ program and a right-click popup with actions.
 Although it doesn't have all the features of both the FocusedApp nor the AppsDock because I just
 picked what I wanted from both.
 
-I've also changed the space between the bar and the tooltip so it's the same as the popup, and made
-it so middle-clicking closes the window.
+I've also changed the space between the bar and the popup/tooltip so it's consistent with other
+widgets, and made it so middle-clicking closes the window.
 
 [DMS plugin development quick start.](https://danklinux.com/docs/dankmaterialshell/plugin-development#quick-start)
 

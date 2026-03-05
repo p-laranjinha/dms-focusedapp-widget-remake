@@ -210,13 +210,13 @@ BasePill {
                         const screenX = root.parentScreen ? root.parentScreen.x : 0;
                         const screenY = root.parentScreen ? root.parentScreen.y : 0;
                         const isLeft = root.axis?.edge === "left";
-                        const tooltipX = isLeft ? (root.barThickness + root.barSpacing) : (root.parentScreen.width - root.barThickness - root.barSpacing);
+                        const tooltipX = isLeft ? (root.barThickness + root.barSpacing + Theme.spacingXS) : (root.parentScreen.width - root.barThickness - root.barSpacing - Theme.spacingXS);
                         const screenRelativeY = globalPos.y - screenY + root.minTooltipY;
                         tooltipLoader.item.show(tooltipText, screenX + tooltipX, screenRelativeY, root.parentScreen, isLeft, !isLeft);
                     } else {
                         const screenHeight = root.parentScreen ? root.parentScreen.height : Screen.height;
                         const isBottom = root.axis?.edge === "bottom";
-                        const tooltipY = isBottom ? (screenHeight - root.barThickness - root.barSpacing - 30) : (root.barThickness + root.barSpacing);
+                        const tooltipY = isBottom ? (screenHeight - root.barThickness - root.barSpacing - Theme.spacingXS - 30) : (root.barThickness + root.barSpacing + Theme.spacingXS);
                         tooltipLoader.item.show(tooltipText, globalPos.x, tooltipY, root.parentScreen, false, false);
                     }
                 }
@@ -251,16 +251,16 @@ BasePill {
 
                     switch (barEdge) {
                         case "bottom":
-                        y = (root.parentScreen ? root.parentScreen.height : Screen.height) - root.barThickness - root.barSpacing;
+                        y = (root.parentScreen ? root.parentScreen.height : Screen.height) - root.barThickness - root.barSpacing - Theme.spacingXS;
                         break;
                         case "top":
-                        y = root.barThickness + root.barSpacing;
+                        y = root.barThickness + root.barSpacing + Theme.spacingXS;
                         break;
                         case "left":
-                        x = root.barThickness + root.barSpacing;
+                        x = root.barThickness + root.barSpacing + Theme.spacingXS;
                         break;
                         case "right":
-                        x = (root.parentScreen ? root.parentScreen.width : Screen.width) - root.barThickness - root.barSpacing;
+                        x = (root.parentScreen ? root.parentScreen.width : Screen.width) - root.barThickness - root.barSpacing - Theme.spacingXS;
                         break;
                     }
 
